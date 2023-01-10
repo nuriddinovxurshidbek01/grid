@@ -1,0 +1,49 @@
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.grid_container {
+    margin-top: 50px;
+    background-color: rgb(194, 248, 248);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 50px 30vh 30vh 50px;
+    gap: 10px;
+    grid-template-areas: "header header header" "navigation navigation navigation" "aside content content" "aside section section" "footer footer footer";
+}
+
+.grid_itam {
+    margin: 2px;
+    padding: 50px;
+}
+
+.grit_itam:nth-child(1) {
+    grid-area: header;
+    background-color: rgb(6, 241, 202);
+}
+
+.grit_itam:nth-child(2) {
+    grid-area: navigation;
+    background-color: rgb(24, 192, 75);
+}
+
+.grit_itam:nth-child(3) {
+    grid-area: aside;
+    background-color: rgb(32, 250, 115);
+}
+
+.grit_itam:nth-child(4) {
+    grid-area: content;
+    background-color: rgb(55, 153, 245);
+}
+
+.grit_itam:nth-child(5) {
+    grid-area: section;
+    background-color: rgb(47, 32, 250);
+}
+
+.grit_itam:nth-child(6) {
+    grid-area: footer;
+    background-color: rgb(10, 198, 231);
+}
